@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="no_search_found">Pencarian berita tidak tersedia</string>
+    <string name="no_bookmark_found">Belum ada berita disimpan</string>
+    <string name="news">Berita</string>
+    <string name="bookmark">Bookmark</string>
+</resources>
