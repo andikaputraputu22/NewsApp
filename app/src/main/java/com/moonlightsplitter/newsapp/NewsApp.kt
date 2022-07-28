@@ -2,6 +2,7 @@ package com.moonlightsplitter.newsapp
 
 import android.app.Application
 import androidx.appcompat.app.AppCompatDelegate
+import com.moonlightsplitter.newsapp.database.databaseModule
 import com.moonlightsplitter.newsapp.fragments.bookmarkFragmentModule
 import com.moonlightsplitter.newsapp.fragments.homeFragmentModule
 import com.moonlightsplitter.newsapp.network.networkModule
@@ -29,7 +30,8 @@ class NewsApp : Application() {
                 homeViewModelModule,
                 homeFragmentModule,
                 bookmarkViewModelModule,
-                bookmarkFragmentModule
+                bookmarkFragmentModule,
+                databaseModule
             )
         }
     }
