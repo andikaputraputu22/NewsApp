@@ -6,7 +6,7 @@
     <data>
         <variable
             name="article"
-            type="com.moonlightsplitter.newsapp.models.NewsModel.DataArticle" />
+            type="com.moonlightsplitter.newsapp.models.DataArticle" />
         <variable
             name="date"
             type="com.moonlightsplitter.newsapp.utils.DateUtil" />

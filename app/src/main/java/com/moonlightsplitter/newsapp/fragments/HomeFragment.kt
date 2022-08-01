@@ -15,6 +15,7 @@ import com.moonlightsplitter.newsapp.adapter.NewsAdapter
 import com.moonlightsplitter.newsapp.databinding.CustomToolbarBinding
 import com.moonlightsplitter.newsapp.databinding.FragmentHomeBinding
 import com.moonlightsplitter.newsapp.models.CategoryModel
+import com.moonlightsplitter.newsapp.models.DataArticle
 import com.moonlightsplitter.newsapp.models.NewsModel
 import com.moonlightsplitter.newsapp.viewmodel.HomeViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -75,7 +76,7 @@ class HomeFragment : Fragment() {
 
     private val newsAdapter by lazy {
         NewsAdapter(arrayListOf(), object : NewsAdapter.OnAdapterListener {
-            override fun onClick(article: NewsModel.DataArticle) {
+            override fun onClick(article: DataArticle) {
                 startActivity(
                     Intent(requireActivity(), DetailActivity::class.java)
                         .putExtra("detailArticle", article)

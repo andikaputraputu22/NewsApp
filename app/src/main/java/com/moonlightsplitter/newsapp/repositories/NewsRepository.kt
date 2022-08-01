@@ -2,6 +2,7 @@ package com.moonlightsplitter.newsapp.repositories
 
 import com.moonlightsplitter.newsapp.BuildConfig
 import com.moonlightsplitter.newsapp.database.NewsDao
+import com.moonlightsplitter.newsapp.models.DataArticle
 import com.moonlightsplitter.newsapp.models.NewsModel
 import com.moonlightsplitter.newsapp.network.ApiInterface
 import com.moonlightsplitter.newsapp.utils.COUNTRY_NEWS
@@ -25,13 +26,13 @@ class NewsRepository(
         )
     }
 
-    suspend fun findNews(article: NewsModel.DataArticle) = db.findNews(article.publishedAt)
+    suspend fun findNews(article: DataArticle) = db.findNews(article.publishedAt)
 
-    suspend fun saveNews(article: NewsModel.DataArticle) {
+    suspend fun saveNews(article: DataArticle) {
         db.saveNews(article)
     }
 
-    suspend fun deleteNews(article: NewsModel.DataArticle) {
+    suspend fun deleteNews(article: DataArticle) {
         db.deleteNews(article)
     }
 }
